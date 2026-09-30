@@ -1,0 +1,35 @@
+# Machine-specific configuration
+config/local.conf
+
+# Qualcomm/QNN proprietary artifacts
+qnn-net-run
+libQnnHtp.so
+libQnnHtpV68Skel.so
+libQnnHtpV68Stub.so
+resnet50_aimet_quantized_6490.bin
+
+# Build artifacts
+stressor/cpu-stressor-affinity
+__pycache__/
+*.pyc
+
+# Benchmark outputs
+results/*
+!results/.gitkeep
+
+
+# Raw QNN outputs
+output_*
+qnn-profiling-data_*.log
+profile.csv
+latency.csv
+
+# Temporary compatibility links
+output_baseline_2cpu
+output_baseline_2cpu_run2
+output_baseline_2cpu_run3
+output_contention_2cpu
+output_contention_2cpu_run2
+output_contention_2cpu_run3
+
+
